@@ -17,4 +17,11 @@ class HelloController{
         return new Response('luisvidal.felipe@gmail.com');
     }
 
+
+    #[Route('/animal/{slug}')]
+    public function animal(string $slug = null): Response{
+        return new Response("Ola {$slug}");
+    }
+
+
 }
